@@ -1,0 +1,33 @@
+<!-- <app-manual></app-manual>
+
+ <button routerLink="manual">Router</button>
+<router-outlet></router-outlet> 
+<app-manual [testInput]="test" (testOutput)="handleEvent($event)"></app-manual>
+ 
+ <app-testmod></app-testmod> 
+
+<button mat-raised-button disableRipple>hello world</button>
+<button color="primary" mat-fab>fab</button>
+<br>
+
+<mat-button-toggle #isToggled checked>Toggle</mat-button-toggle>
+{{isToggled.checked}}
+
+<div>
+    <mat-button-toggle-group #toggleGroupValue="matButtonToggleGroup" multiple>
+        <mat-button-toggle value="something1">angular</mat-button-toggle>
+        <mat-button-toggle value="something2">material</mat-button-toggle>
+        <mat-button-toggle value="something3">good</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGroupValue.value}}
+</div> -->
+<form>
+    <mat-form-field>
+        <input type="text" matInput [matAutocomplete]="auto"/>
+        <mat-autocomplete #auto="matAutocomplete">
+           <mat-option *ngFor="let option of options" [value]="option.name">
+            {{option.name}}
+           </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+</form>
